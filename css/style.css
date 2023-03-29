@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap');
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif; 
+    font-weight: 400;
+    background-color:  hsl(221, 100%, 96%);
+}
+
+.contenedor{
+    width: 650px;
+    min-height: 100px;
+    text-align: center;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1.5rem;
+    
+}
+.contenido{
+    width: 50%;
+    min-height: 390px;
+    flex-grow: 1;
+    background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.lateral{
+    background-color: #FFF;
+    width: 50%;
+    min-height: 390px;
+    flex-grow: 0.5;
+    border-radius: 1.5rem;
+    text-align: center;
+   
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+h2{
+    flex-basis: 100%;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+h1{
+    flex-basis: 100%;
+    color: #FFF;
+    font-size: 18px;
+
+}
+
+h3{
+    text-align: left;
+    text-indent: 20px;
+}
+
+.reaction, .memory, .verbal, .visual{
+    width: 85%;
+    margin: 20px;
+    padding: 0 10px;
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+
+}
+.continue{
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 2rem;
+    color: #FFF;
+    padding: 10px 90px;
+    margin-bottom: 20px;
+    
+}
+.circle{
+    background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+    min-height: 150px;
+    border-radius: 100%;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+}
+.p_{
+    flex-basis: 100%;
+    font-size: 58px;
+    font-weight: 800;
+    margin: 0;
+    color: #FFF;
+    margin-top: 30px;
+}
+#parr{
+    padding-bottom: 50px;
+    margin-left: 38px;
+    margin-right: 38px;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+div span{
+    text-align: left;
+}
+p{
+    display: inline;
+    color: black;
+}
+.reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0,100%,67%,0.1);
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39,100%,56%,0.1);
+}
+.verbal{
+    color:hsl(166, 100%, 37%);
+    background-color: hsla(166,100%,37%,0.1);
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234,85%,45%,0.1);
+}
+
+p span{
+    color: hsla(224, 30%, 27%,50%);
+}
+.of{
+    color: hsla(0, 0%, 100%,40%);
+    font-weight: 500;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+@media (max-width:575px){
+    body{
+        height: 750px;
+    }
+    .contenedor{
+        width: 300px;
+        min-height: 750px;
+        flex-wrap: wrap;
+    }
+    .contenido{
+        width: 100%;
+    }
+    .lateral{
+        width: 100%;
+    }
+    footer{
+        flex-basis: 100%;
+        bottom: 0;
+    }
+}
